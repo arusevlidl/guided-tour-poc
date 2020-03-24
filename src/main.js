@@ -7,6 +7,11 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import { routes } from "./router";
 import VueRouter from "vue-router";
+import VueTour from "vue-tour";
+
+require("vue-tour/dist/vue-tour.css");
+
+Vue.use(VueTour);
 
 const router = new VueRouter({ routes });
 Vue.use(VueRouter);
