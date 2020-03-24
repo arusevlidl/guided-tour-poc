@@ -1,4 +1,8 @@
-// if calling the mixin with pageName 'mainPage', the v-tour "name" prop should be called 'mainPageTour'. That's the only manual work needed
+/*  
+    When adding the mixin it should be called as a function, so that the pageName can be passed
+    In order to use it properly, the "pageName" argument should be also used in the <vue-tour> as the "name" prop with the string "Tour" appended, 
+    i.e. if we call the mixin with argument 'mainPage', the v-tour "name" prop should be "mainPageTour"
+*/
 export const TourMixin = pageName => ({
   computed: {
     steps: function() {
